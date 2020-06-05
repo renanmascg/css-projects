@@ -1,0 +1,120 @@
+:root {
+  --primary-red: hsl(0, 78%, 62%);
+  --primary-cyan: hsl(180, 62%, 55%);
+  --primary-orange: hsl(34, 97%, 64%);
+  --primary-blue: hsl(212, 86%, 64%);
+
+  --very-dark-blue: hsl(234, 12%, 34%);
+  --grayish-blue: hsl(229, 6%, 66%);
+  --very-light-gray: hsl(0, 0%, 98%);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  color: var(--very-dark-blue);
+}
+
+body {
+  font-size: 15px;
+  font-family: Poppins, sans-serif;
+  height: 100vh;
+  background-color: #FAFAFA;
+}
+
+header {
+  margin-top: 90px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 36px;
+}
+
+header p {
+  margin-top: 15px;
+  color: var(--grayish-blue);
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-regular-text {
+  font-weight: 100;
+}
+
+.card-group {
+  width: 100%;
+  height: 100%;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-cyan, .card-blue, .card-red, .card-orange {
+  margin: 0px 15px;
+  width: 350px;
+  min-width: 350px;
+  height: 250px;
+  overflow: hidden;
+  background-color: var(--primary-cyan);
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  box-shadow: 3px 25px 92px -45px rgba(0,0,0,0.48);
+}
+
+.card-blue {
+  background-color: var(--primary-blue);
+}
+
+.card-orange {
+  margin-top: 30px;
+  background-color: var(--primary-orange);
+}
+.card-red {
+  background-color: var(--primary-red);
+}
+
+.card-content {
+  width: 100%;
+  margin-top: 4px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 30px 0px 30px;
+  height: 60%;
+}
+
+.card-content h1 {
+  font-size: 20px;
+}
+
+.card-content p {
+  margin-top: 10px;
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--grayish-blue);
+}
+
+.card-icon {
+  width: auto;
+  background-color: white;
+  height: 100%;
+  cursor: pointer;
+  padding: 0px 30px 30px 0px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.card-icon img {
+  width: 64px;
+  height: 64px;
+}
